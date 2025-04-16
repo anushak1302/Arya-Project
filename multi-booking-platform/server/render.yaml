@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: booking-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        value: <your MongoDB Atlas URI>
+    region: oregon
